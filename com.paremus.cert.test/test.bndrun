@@ -1,0 +1,15 @@
+-runfw: org.apache.felix.framework;version='[6.0.3,6.0.3]'
+-runee: JavaSE-1.8
+-runrequires: bnd.identity;id='com.paremus.cert.test'
+-runbundles: \
+	com.paremus.cert;version='[1.1.0,1.1.1)',\
+	com.paremus.cert.test;version='[1.1.0,1.1.1)',\
+	org.apache.servicemix.bundles.junit;version='[4.12.0,4.12.1)',\
+	org.osgi.util.function;version='[1.1.0,1.1.1)',\
+	bcpkix;version='[1.64.0,1.64.1)',\
+	bcprov;version='[1.64.0,1.64.1)',\
+	org.apache.felix.configadmin;version='[1.9.16,1.9.17)',\
+	org.apache.felix.converter;version='[1.0.8,1.0.9)',\
+	org.apache.felix.scr;version='[2.1.16,2.1.17)',\
+	org.osgi.util.promise;version='[1.1.0,1.1.1)',\
+	com.paremus.license;version='[1.1.0,1.1.1)'

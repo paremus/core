@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.paremus.build</groupId>
+        <artifactId>product-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.paremus.core</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.1.0</version>
+    <packaging>pom</packaging>
+    
+    <description>The common parent pom for the Paremus core components</description>
+    <url>https://github.com/paremus/core</url>
+    
+    <scm>
+        <connection>scm:git:https://github.com/paremus/core.git</connection>
+        <developerConnection>scm:git:https://github.com/paremus/core.git</developerConnection>
+        <url>https://github.com/paremus/core</url>
+    </scm>
+
+    <properties>
+        <build.version>1.0.0</build.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk15on</artifactId>
+                <version>1.64</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bctls-jdk15on</artifactId>
+                <version>1.64</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
